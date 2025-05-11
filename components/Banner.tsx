@@ -8,7 +8,7 @@ import Link from "next/link"; // Import Link for navigation
 const RotatingTitles = () => {
   return (
     <span className="font-serif text-textDark mt-2 lgl:mt-8 text-2xl lgl:text-3xl">
-      I'm{" "}
+      I&apos;m{" "}
       <span className="text-textGreen">
         <Typewriter
           words={["Undergraduate", "Developer", "Software Engineer", "ML Engineer", "Data Scientist"]}
@@ -36,7 +36,7 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-4xl lgl:text-6xl font-title Font font-serif flex flex-col"
       >
-        Hey It's Amie.
+        Hey It&apos;s Amie.
         <RotatingTitles />
       </motion.h1>
 
@@ -46,12 +46,12 @@ const Banner = () => {
         transition={{ duration: 0.5, delay: 0.8 }}
         className="text-base md:max-w-[650px] text-textDark font-medium"
       >
-        I'm a Software Engineering undergraduate passionate about web development and machine learning. I'm currently learning
+        I&apos;m a Software Engineering undergraduate passionate about web development and machine learning. I&apos;m currently learning
         React, Node.js, Express, Java, and Python to build scalable and user-friendly applications.
         Always eager to explore new technologies and improve my skills!
       </motion.p>
 
-      {/* Updated Link to Resume Page */}
+      {/* Updated Link to About Section */}
       <Link href="#about"> {/* Use Link from Next.js */}
         <motion.button
           initial={{ y: 10, opacity: 0 }}

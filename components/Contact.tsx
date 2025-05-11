@@ -15,7 +15,7 @@ const Contact = () => {
       </p> */}
       <h2 className="mb-4 font-serif text-5xl font-semibold">Get In Touch</h2>
       <p className="font-serif max-w-[600px] text-center text-textDark">
-      Get in touch! If you have any questions or feedback, feel free to reach out. I'd love to hear from you! 
+        Get in touch! If you have any questions or feedback, feel free to reach out. I&apos;d love to hear from you!
       </p>
 
       <button

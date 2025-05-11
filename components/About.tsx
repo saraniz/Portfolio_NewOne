@@ -2,7 +2,7 @@ import { profileImg } from "@/public/assets";
 import Image from "next/image";
 import SectionTitle from "./SectionTitle";
 import { AiFillThunderbolt } from "react-icons/ai";
-import me from '@/public/assets/me2.png';  
+import me from "@/public/assets/me2.png";
 
 const About = () => {
   return (
@@ -14,17 +14,15 @@ const About = () => {
       <div className="flex flex-col lgl:flex-row gap-16">
         <div className="w-full lgl:w-2/3 text-base text-textDark font-medium flex flex-col gap-4">
           <p>
-          Hey there!.I'm Amandi Thathsarani. I am currently a third-year undergraduate at the University of Sri Jayewardenepura, 
-          pursuing a Bachelor of Computing (Honours) in Software Engineering.I'm particularly interested in web development, mobile development, UI/UX design, data science, and AI. I’ve learned the MERN stack (MongoDB, Express.js, React, Node.js) 
-          and am now diving into Python, Django, and Next.js to expand my full-stack development skills. 
-          In addition to my studies, I have a keen interest in video editing and article writing.
+            Hey there! I&apos;m Amandi Thathsarani. I am currently a third-year undergraduate at the University of Sri Jayewardenepura, 
+            pursuing a Bachelor of Computing (Honours) in Software Engineering. I&apos;m particularly interested in web development, mobile development, UI/UX design, data science, and AI. I&apos;ve learned the MERN stack (MongoDB, Express.js, React, Node.js) 
+            and am now diving into Python, Django, and Next.js to expand my full-stack development skills. 
+            In addition to my studies, I have a keen interest in video editing and article writing.
           </p>
           <p>
-          Outside of my studies, I actively participate in hackathons and volunteer for the Computer Societies at our university. 
-          Currently, I’m working on developing my personal achievement website to showcase my projects and milestones.,{" "}
-            
+            Outside of my studies, I actively participate in hackathons and volunteer for the Computer Societies at our university. 
+            Currently, I&apos;m working on developing my personal achievement website to showcase my projects and milestones.
           </p>
-         
           <p>Here are a few technologies and Programming Languages I have been working with recently:</p>
           <ul className="max-w-[450px] text-sm font-titleFont grid grid-cols-2 gap-2 mt-6">
             <li className="flex items-center gap-2">
