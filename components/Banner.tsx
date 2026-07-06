@@ -7,11 +7,11 @@ import Link from "next/link"; // Import Link for navigation
 
 const RotatingTitles = () => {
   return (
-    <span className="font-serif text-textDark mt-2 lgl:mt-8 text-2xl lgl:text-3xl">
+    <span className="font-titleFont text-textDark mt-2 lgl:mt-8 text-2xl lgl:text-3xl">
       I&apos;m{" "}
       <span className="text-textGreen">
         <Typewriter
-          words={["Undergraduate", "Developer", "Software Engineer", "ML Engineer", "Data Scientist"]}
+          words={["Software Engineer", "AI/ML Engineer", "Full-Stack Developer", "MLOps & DevOps Engineer", "Data Scientist"]}
           loop={true}
           cursor
           cursorStyle="|"
@@ -34,7 +34,7 @@ const Banner = () => {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-4xl lgl:text-6xl font-title Font font-serif flex flex-col"
+        className="text-4xl lgl:text-6xl font-titleFont flex flex-col"
       >
         Hey It&apos;s Amie.
         <RotatingTitles />
@@ -44,11 +44,9 @@ const Banner = () => {
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.8 }}
-        className="text-base md:max-w-[650px] text-textDark font-medium"
+        className="text-base md:max-w-[650px] text-textDark font-medium leading-relaxed"
       >
-        I&apos;m a Software Engineering undergraduate passionate about web development and machine learning. I&apos;m currently learning
-        React, Node.js, Express, Java, and Python to build scalable and user-friendly applications.
-        Always eager to explore new technologies and improve my skills!
+        I&apos;m a Software Engineering undergraduate specializing in building scalable full-stack applications, robust MLOps/DevOps pipelines, and AI/ML solutions. I combine modern web development (React, Node.js) with machine learning workflows (TensorFlow, Scikit-learn) and cloud deployment infrastructures (Docker, Kubernetes, AWS, Terraform) to build end-to-end intelligent systems.
       </motion.p>
 
       {/* Updated Link to About Section */}

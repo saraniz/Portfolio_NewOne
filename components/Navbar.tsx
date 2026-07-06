@@ -38,26 +38,26 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/">
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.1 }}>
-            <h1 className="text-2xl font-serif ml-6 text-textGreen">Amie.</h1>
+            <h1 className="text-2xl font-titleFont ml-6 text-textGreen">Amie.</h1>
           </motion.div>
         </Link>
 
         {/* Desktop Nav Links */}
         <div className="hidden mdl:inline-flex items-center gap-10">
-          <ul className="flex text-md font-serif gap-6">
+          <ul className="flex text-md font-titleFont gap-6">
             {[
               { href: "#home", label: "Home" },
               { href: "#about", label: "About" },
               { href: "#experience", label: "Experience" },
               { href: "#project", label: "Project" },
               { href: "https://codecoffeee.hashnode.dev/", label: "Blog", external: true },
-              { href: "https://sunny881.my.canva.site/amiez", label: "Achievements",external: true },
+              { href: "#achievements", label: "Achievements" },
               { href: "#contact", label: "Contact" },
             ].map((item, i) => (
               <Link
                 key={item.label}
                 href={item.href}
-                onClick={!item.external ? handleScroll : undefined}
+                onClick={item.href.startsWith("#") ? handleScroll : undefined}
                 target={item.external ? "_blank" : "_self"}
                 rel={item.external ? "noopener noreferrer" : ""}
                 className="nav-link text-textDark hover:text-textGreen cursor-pointer duration-300"
@@ -109,13 +109,13 @@ const Navbar = () => {
                     { href: "#experience", label: "Experience" },
                     { href: "#project", label: "Project" },
                     { href: "https://codecoffeee.hashnode.dev/", label: "Blog", external: true },
-                    { href: "https://sunny881.my.canva.site/amiez", label: "Achievements",external: true },
+                    { href: "#achievements", label: "Achievements" },
                     { href: "#contact", label: "Contact" },
                   ].map((item, i) => (
                     <Link
                       key={item.label}
                       href={item.href}
-                      onClick={!item.external ? handleScroll : undefined}
+                      onClick={item.href.startsWith("#") ? handleScroll : undefined}
                       target={item.external ? "_blank" : "_self"}
                       rel={item.external ? "noopener noreferrer" : ""}
                       className="text-textLight hover:text-textGreen duration-300 nav-link"

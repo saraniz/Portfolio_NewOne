@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import TechStack from "@/components/TechStack";
 import Banner from "@/components/Banner";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
@@ -10,6 +11,7 @@ import RightSide from "@/components/RightSide";
 import Head from "next/head";
 import { motion } from "framer-motion";
 import Archive from "@/components/Archive";
+import Achievements from "@/components/Achievements";
 
 export default function Home() {
   return (
@@ -34,9 +36,11 @@ export default function Home() {
           <div className="h-[88vh] mx-auto p-4">
             <Banner />
             <About />
+            <TechStack />
             <Experience />
             <Projects />
             <Archive />
+            <Achievements />
             <Contact />
             <Footer />
           </div>
