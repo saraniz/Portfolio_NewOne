@@ -49,17 +49,17 @@ const Banner = () => {
         I&apos;m a Software Engineering undergraduate specializing in building scalable full-stack applications, robust MLOps/DevOps pipelines, and AI/ML solutions. I combine modern web development (React, Node.js) with machine learning workflows (TensorFlow, Scikit-learn) and cloud deployment infrastructures (Docker, Kubernetes, AWS, Terraform) to build end-to-end intelligent systems.
       </motion.p>
 
-      {/* Updated Link to About Section */}
-      <Link href="#about"> {/* Use Link from Next.js */}
+      {/* Resume Link Button */}
+      <a href="/assets/Amandi_Athukorala_Resume.pdf" target="_blank" rel="noopener noreferrer">
         <motion.button
           initial={{ y: 10, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.9 }}
           className="w-52 h-14 text-sm font-titleFont border border-textGreen rounded-md text-textGreen tracking-wide hover:bg-hoverColor duration-300"
         >
-          View More
+          Resume
         </motion.button>
-      </Link>
+      </a>
     </section>
   );
 };
