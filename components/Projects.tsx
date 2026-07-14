@@ -10,9 +10,20 @@ import weather from "@/public/assets/weather.png";
 import spam from "@/public/assets/spame.png";
 import red from "@/public/assets/red.png";
 import innpix from "@/public/assets/innpix.png";
+import shrinkit from "@/public/assets/shrinkit.png";
 
 const Projects = () => {
   const projects = [
+    {
+      title: "ShrinkIt: URL Shortener",
+      description:
+        "A fast, secure, and modern URL shortener that transforms long, complex URLs into clean, manageable links in seconds. Integrates quick link generation and analytics tracking, designed with Figma, tested with Postman, and built with Go and Prisma.",
+      tech: ["Go", "Prisma", "Postman", "Figma", "React"],
+      image: shrinkit,
+      github: "https://github.com/saraniz/srinklt-url-shortener",
+      live: "https://srinklt-url-shortener.vercel.app/",
+      isReverse: false,
+    },
     {
       title: "Leftly - Surplus Food Ordering Website",
       description:
@@ -20,8 +31,8 @@ const Projects = () => {
       tech: ["Next.js", "TypeScript", "Express.js", "Node.js", "Neon", "Zustand", "Socket.io"],
       image: leftly,
       github: "https://github.com/saraniz/Surplus-Food---Leftly",
-      live: "https://github.com/saraniz/Surplus-Food---Leftly",
-      isReverse: false,
+      live: "https://surplus-food-leftly.vercel.app/",
+      isReverse: true,
     },
     {
       title: "TrustSpot: Trustworthy Place Discovery Platform",
@@ -31,7 +42,7 @@ const Projects = () => {
       image: trustspot,
       github: "https://github.com/saraniz/TrustSpot-Trustworthy-Place-Discovery-Platform",
       live: "https://github.com/saraniz/TrustSpot-Trustworthy-Place-Discovery-Platform",
-      isReverse: true,
+      isReverse: false,
     },
     {
       title: "ToDo Web Application",
@@ -40,8 +51,8 @@ const Projects = () => {
       tech: ["React", "JavaScript", "TailwindCSS", "Express.js", "MongoDB"],
       image: todo,
       github: "https://github.com/saraniz/To-Do-Web-App",
-      live: "https://github.com/saraniz/To-Do-Web-App",
-      isReverse: false,
+      live: "https://to-do-web-app-iota-ten.vercel.app/",
+      isReverse: true,
     },
     {
       title: "Weather Prediction System",
@@ -51,7 +62,7 @@ const Projects = () => {
       image: weather,
       github: "https://github.com/saraniz/Weather-Prediction-System",
       live: "https://weather-prediction--system.streamlit.app/",
-      isReverse: true,
+      isReverse: false,
     },
     {
       title: "SpamShield: AI Email Classifier",
@@ -61,7 +72,7 @@ const Projects = () => {
       image: spam,
       github: "https://github.com/Nuhansa-Kodithuwakku/spam_detection",
       live: "https://spamshields.streamlit.app/",
-      isReverse: false,
+      isReverse: true,
     },
     {
       title: "Red Alert: Emergency Blood Donation App",
@@ -71,7 +82,7 @@ const Projects = () => {
       image: red,
       github: "https://github.com/ImalshaSathsarani/RedAlert",
       live: "https://red-alert-zeta.vercel.app/",
-      isReverse: true,
+      isReverse: false,
     },
     {
       title: "SafeHer: Women's Safety & Wellbeing UI/UX",
@@ -81,7 +92,7 @@ const Projects = () => {
       image: innpix,
       github: "",
       live: "https://www.figma.com/design/d3TFsYICARj5Nazl2hG1l0/Inpix_SafeHer-Prototype?node-id=0-1&p=f&t=RFMFEIdh3ESTy0QU-0",
-      isReverse: false,
+      isReverse: true,
     },
   ];
 

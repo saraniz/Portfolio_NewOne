@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SiNextdotjs, SiJavascript, SiExpress, SiMongodb, SiKubernetes, SiMlflow, SiNumpy, SiPandas, SiFastapi, SiTailwindcss, SiLinux, SiGnubash } from "react-icons/si";
+import { SiNextdotjs, SiJavascript, SiExpress, SiMongodb, SiKubernetes, SiMlflow, SiNumpy, SiPandas, SiFastapi, SiTailwindcss, SiLinux, SiGnubash, SiGo, SiPrisma, SiFigma, SiPostman } from "react-icons/si";
 import { FaReact, FaNodeJs, FaPython, FaJava, FaDocker, FaAws } from "react-icons/fa";
 import SectionTitle from "./SectionTitle";
 
@@ -13,9 +13,10 @@ const TechStack = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   const skills: Skill[] = [
-    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-    { name: "Python", icon: FaPython, color: "#3776AB" },
     { name: "Java", icon: FaJava, color: "#007396" },
+    { name: "Python", icon: FaPython, color: "#3776AB" },
+    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    { name: "Go", icon: SiGo, color: "#00ADD8" },
     { name: "React", icon: FaReact, color: "#61DAFB" },
     { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF" },
     { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
@@ -23,6 +24,7 @@ const TechStack = () => {
     { name: "Express.js", icon: SiExpress, color: "#FFFFFF" },
     { name: "FastAPI", icon: SiFastapi, color: "#009688" },
     { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+    { name: "Prisma", icon: SiPrisma, color: "#2D3748" },
     { name: "NumPy", icon: SiNumpy, color: "#4D77CF" },
     { name: "Pandas", icon: SiPandas, color: "#150458" },
     { name: "MLflow", icon: SiMlflow, color: "#0194E2" },
@@ -31,6 +33,8 @@ const TechStack = () => {
     { name: "AWS", icon: FaAws, color: "#FF9900" },
     { name: "Linux", icon: SiLinux, color: "#FCC624" },
     { name: "Bash", icon: SiGnubash, color: "#4EAA25" },
+    { name: "Figma", icon: SiFigma, color: "#F24E1E" },
+    { name: "Postman", icon: SiPostman, color: "#FF6C37" },
   ];
 
   return (
